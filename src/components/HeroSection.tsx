@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone, Guitar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroWorkshop from '@/assets/hero-workshop.jpg';
 import vineBorder from '@/assets/vine-border.png';
@@ -15,6 +15,22 @@ const HeroSection = () => {
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
+
+      {/* Top CTA Buttons */}
+      <div className="absolute top-6 left-6 right-6 z-20 flex justify-between">
+        <Button variant="hero" size="xl" asChild className="rounded-xl text-base md:text-lg shadow-deep">
+          <a href="#gallery">
+            <Guitar className="h-5 w-5 mr-1" />
+            View the Collection
+          </a>
+        </Button>
+        <Button variant="hero" size="xl" asChild className="rounded-xl text-base md:text-lg shadow-deep">
+          <a href="tel:+19805251991">
+            <Phone className="h-5 w-5 mr-1" />
+            (980) 525-1991
+          </a>
+        </Button>
+      </div>
       
       {/* Vine Border Top */}
       <div
