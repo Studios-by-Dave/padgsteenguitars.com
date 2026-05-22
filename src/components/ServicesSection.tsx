@@ -1,10 +1,11 @@
-import { Wrench, Guitar, Settings, Sparkles } from 'lucide-react';
+import { Wrench, Guitar, Music, ArrowRight } from 'lucide-react';
 
 interface Service {
   icon: React.ReactNode;
   title: string;
   description: string;
   features: string[];
+  link: string;
 }
 
 const services: Service[] = [
@@ -13,24 +14,21 @@ const services: Service[] = [
     title: 'Custom Builds',
     description: 'Work directly with Roger to design and build your dream guitar from the ground up.',
     features: ['Personalized consultation', 'Premium tonewoods', 'Custom inlays & finishes', 'Lifetime warranty'],
+    link: '/services/custom-builds',
   },
   {
     icon: <Wrench className="h-8 w-8" />,
-    title: 'Repairs & Restoration',
+    title: 'Repairs & Restorations',
     description: 'Expert repair services to bring your beloved instrument back to its full glory.',
-    features: ['Fret work & leveling', 'Neck resets', 'Crack repairs', 'Electronics repair'],
+    features: ['Fret work & leveling', 'Neck resets', 'Setups & adjustments', 'Upgrades & mods'],
+    link: '/services/repairs-restorations',
   },
   {
-    icon: <Settings className="h-8 w-8" />,
-    title: 'Setups & Adjustments',
-    description: 'Professional setups to optimize playability and tone for your playing style.',
-    features: ['Action adjustment', 'Intonation', 'Nut & saddle work', 'String installation'],
-  },
-  {
-    icon: <Sparkles className="h-8 w-8" />,
-    title: 'Upgrades & Mods',
-    description: 'Customize your existing guitar with premium upgrades and modifications.',
-    features: ['Pickup swaps', 'Hardware upgrades', 'Custom wiring', 'Finish touch-ups'],
+    icon: <Music className="h-8 w-8" />,
+    title: 'Booking Shows',
+    description: 'Book Roger for live music performances at your events and venues.',
+    features: ['Private parties', 'Weddings', 'Venue entertainment', 'Corporate events'],
+    link: '/services/booking-shows',
   },
 ];
 
@@ -56,7 +54,7 @@ const ServicesSection = () => {
         </div>
         
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={service.title}
@@ -79,7 +77,7 @@ const ServicesSection = () => {
               </p>
               
               {/* Features */}
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2 text-sm text-foreground/80">
                     <span className="w-1.5 h-1.5 rounded-full bg-caramel" />
@@ -87,6 +85,14 @@ const ServicesSection = () => {
                   </li>
                 ))}
               </ul>
+
+              {/* Learn More Link */}
+              <a
+                href={service.link}
+                className="inline-flex items-center gap-2 text-caramel hover:text-caramel/80 font-sans text-sm transition-colors"
+              >
+                Learn More <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
           ))}
         </div>

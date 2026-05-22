@@ -42,12 +42,12 @@ const HeroSection = () => {
           
           {/* Main Title */}
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-cream mb-6 leading-tight relative z-10">
-            Roger <span className="text-gradient italic">Padgett</span>
+            Padgsteen <span className="text-gradient italic">Guitars</span>
           </h1>
           
           {/* Subtitle */}
           <p className="font-sans text-xl md:text-2xl text-cream/80 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-            Handcrafted guitars & soulful Southern music from the heart of Appalachia
+            Handcrafted guitars and Memorabilia from Shelby, North Carolina's own Mr. Roger Padgett
           </p>
           
           {/* CTA Buttons */}

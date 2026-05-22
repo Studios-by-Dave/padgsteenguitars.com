@@ -45,9 +45,19 @@ const ContactSection = () => {
                   <div className="w-14 h-14 rounded-lg bg-caramel/10 flex items-center justify-center text-caramel shrink-0">
                     <Phone className="h-6 w-6" />
                   </div>
-                  <div>
-                    <p className="font-medium text-foreground">Call or Text</p>
-                    <a href="tel:+19805251991" className="text-foreground text-2xl md:text-3xl font-bold tracking-wide hover:text-caramel transition-colors" aria-label="Call Padgsteen Guitars at (980) 525-1991">(980) 525-1991</a>
+                  <div className="flex-1">
+                    <p className="font-medium text-foreground mb-2">Call or Text</p>
+                    <a
+                      href="tel:+19805251991"
+                      className="inline-block bg-gradient-to-r from-caramel to-amber-600 text-black text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide py-4 px-8 rounded-xl border-4 border-black shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden animate-shimmer"
+                      style={{
+                        textShadow: '2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000',
+                        WebkitTextStroke: '1px black',
+                      }}
+                      aria-label="Call Padgsteen Guitars at (980) 525-1991"
+                    >
+                      (980) 525-1991
+                    </a>
                   </div>
                 </div>
                 
