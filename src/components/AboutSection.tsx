@@ -13,7 +13,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative z-10">
               {/* Main portrait */}
-              <div className="relative rounded-lg overflow-hidden shadow-deep hover-lift">
+              <div className="relative rounded-lg overflow-hidden shadow-deep hover-lift max-w-md mx-auto">
                 <img
                   src={rogerPortrait}
                   alt="Roger Padgett - Master luthier and musician in his guitar workshop"

@@ -17,7 +17,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // Custom Padgsteen variants
         hero: "bg-caramel text-cream font-display text-base tracking-wide hover:bg-amber-glow shadow-warm hover:shadow-deep hover:-translate-y-0.5",
-        heroOutline: "border-2 border-caramel/60 text-cream font-display text-base tracking-wide hover:bg-caramel/20 hover:border-caramel backdrop-blur-sm",
+        heroBlue: "bg-navy text-cream font-display text-base tracking-wide border-2 border-caramel hover:bg-caramel hover:border-navy shadow-warm hover:shadow-deep hover:-translate-y-0.5 transition-all duration-300",
+        heroOutline: "border-2 border-caramel/60 text-cream font-display text-base tracking-wide hover:bg-navy hover:border-navy hover:text-cream backdrop-blur-sm transition-all duration-300",
         warmGhost: "text-caramel hover:text-amber-glow hover:bg-caramel/10",
         navLink: "text-cream/80 hover:text-cream font-sans tracking-wide transition-colors",
         accent: "bg-muscadine text-cream hover:bg-muscadine/80 shadow-soft",

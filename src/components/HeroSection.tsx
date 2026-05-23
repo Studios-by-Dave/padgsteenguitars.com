@@ -52,11 +52,17 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="heroOutline" size="lg" asChild>
               <a href="#gallery">View Guitars</a>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
+            <Button variant="heroOutline" size="lg" asChild>
               <a href="#music">Listen Now</a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="/services/booking-shows">Book a Show</a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="/shop">Shop</a>
             </Button>
           </div>
         </div>

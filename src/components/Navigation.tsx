@@ -4,16 +4,17 @@ import { Button } from '@/components/ui/button';
 import logo from '@/assets/padgsteen-logo.png';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#gallery', label: 'Guitars' },
+  { href: '/#about', label: 'About' },
+  { href: '/#gallery', label: 'Guitars' },
   { label: 'Services', hasDropdown: true, dropdownItems: [
     { href: '/services/custom-builds', label: 'Custom Builds' },
     { href: '/services/repairs-restorations', label: 'Repairs & Restorations' },
     { href: '/services/booking-shows', label: 'Booking Shows' },
+    { href: '/services/timekeeper', label: 'Timekeeper' },
   ]},
-  { href: '#shop', label: 'Shop' },
-  { href: '#music', label: 'Music' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/shop', label: 'Shop' },
+  { href: '/#music', label: 'Music' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 const Navigation = () => {
