@@ -213,7 +213,10 @@ const Shop = () => {
               }}>
                 <span className="text-amber-500">Coming</span> Soon
               </h2>
-              <div className="w-32 h-1 bg-amber-500 mx-auto" />
+              <div className="w-32 h-1 bg-amber-500 mx-auto mb-4" />
+              <p className="text-stone-400 max-w-2xl mx-auto uppercase tracking-widest text-sm">
+                Instruments and audio gear will be listed soon
+              </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

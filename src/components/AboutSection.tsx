@@ -39,7 +39,24 @@ const AboutSection = () => {
           </div>
           
           {/* Content Column */}
-          <div className="lg:pl-8">
+          <div className="lg:pl-8 relative">
+            {/* Tie-dye background pattern */}
+            <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none" style={{
+              background: `
+                radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.8) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.7) 0%, transparent 40%),
+                radial-gradient(circle at 40% 70%, rgba(37, 99, 235, 0.9) 0%, transparent 45%),
+                radial-gradient(circle at 70% 60%, rgba(96, 165, 250, 0.6) 0%, transparent 35%),
+                radial-gradient(circle at 30% 50%, rgba(30, 58, 138, 1) 0%, transparent 50%),
+                radial-gradient(circle at 60% 80%, rgba(29, 78, 216, 0.8) 0%, transparent 40%),
+                radial-gradient(circle at 90% 70%, rgba(59, 130, 246, 0.7) 0%, transparent 35%),
+                radial-gradient(circle at 15% 85%, rgba(37, 99, 235, 0.9) 0%, transparent 45%)
+              `,
+              filter: 'blur(60px)',
+              opacity: 0.3,
+              zIndex: -1,
+            }} />
+            
             <p className="text-caramel font-sans uppercase tracking-[0.2em] text-sm mb-4">
               About Roger
             </p>
